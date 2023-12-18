@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import backgroundImageSectionOne from "/public/blockchain.jpg";
 import backgroundImageSectionTwo from "/public/startup.jpg";
 import backgroundImageSectionThree from "/public/circle.jpg";
@@ -7,7 +6,7 @@ import backgroundImageSectionFour from "/public/hands.jpg";
 export default function Home() {
   return (
     <>
-      <main className="">
+      <main>
         <section style={{
           backgroundImage: `url(${backgroundImageSectionOne.src})`,
           backgroundPosition: "center",
@@ -90,10 +89,10 @@ export default function Home() {
               <p>Agile CI/CD</p>
             </div>
             <div className='flex flex-col items-center'>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-20 h-20bun">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-20 h-20">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
               </svg>
-              <p>Development</p>
+              <p>CyberSecurity</p>
             </div>
           </div>
         </section>
@@ -117,47 +116,6 @@ export default function Home() {
           </div>
           <div></div>
           <div></div>
-        </section>
-        <section style={{ backgroundColor: 'rgb(240, 240, 240);' }} className='grid grid-cols-3 gap-4 p-4 text-lg font-bold'>
-          <div>
-            <h1 className='font-bold'>Navigation</h1>
-            <ul className='list-disc ml-5 mt-5'>
-              <li>
-                <Link href={'/about'}>About Us</Link>
-              </li>
-              <li>
-                <Link href={'/solutions'}>Solutions</Link>
-              </li>
-              <li>
-                <Link href={'/contracts'}>Contracts</Link>
-              </li>
-              <li>
-                <Link href={'news'}>News</Link>
-              </li>
-              <li>
-                <Link href={'contact'}>Contact Us</Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h1 className='font-bold'>
-              Avalogics
-            </h1>
-            <div>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-              </svg>
-              <p>
-                2226 South 500 West, Clearfield, UT 84015
-              </p>
-            </div>
-            <div>Avalogics LLC</div>
-          </div>
-          <div>
-            <div>3855199436</div>
-            <div>solutions@avalogics.com</div>
-          </div>
         </section>
       </main>
     </>

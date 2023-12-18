@@ -34,3 +34,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Acknowledgments
+
+We would like to express our appreciation to Pixabay for providing high quality images and visual resources free of charge. The visual elements used in this project are courtesy of Pixabay.
+
+### Visual Resources
+
+The images and visual resources used in this project have been obtained from Pixabay. You can find the originals and explore more resources at [Pixabay](https://pixabay.com/).
+
+## License
+
+Los recursos visuales utilizados en este proyecto son de Pixabay y se encuentran bajo la Licencia CC0. Consulta los detalles de la licencia en [CC0](https://creativecommons.org/publicdomain/zero/1.0/).

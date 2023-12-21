@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
-import Image from "next/image"
 import backgroundImageSectionOne from "/public/light-bulb.jpg";
 import backgroundImageSectionTwo from "/public/industry.jpg";
 import backgroundImageSectionThree from "/public/triangles.png";
+import alagantLogo from "/public/Alagant-logo.png";
+import nursa from "/public/nursa.svg";
+import truckonomics from '/public/trucknomics.jpg';
 
 export const metadata: Metadata = {
     title: 'About Us - Avalogics'
@@ -27,7 +29,7 @@ export default function About() {
                     <div></div>
                     <div>
                         <h2 className='text-xl font-bold mb-2 mt-2'>About Us</h2>
-                        <h1 className='text-2xl font-bold mb-2 mt-2'>Agencies call us trusted allies – now with expanded expertise dedicated to uplifting your teams’ reach. Progress demands out-of-box orchestration. Contact us to compose possibilities.</h1>
+                        <h1 className='text-2xl font-bold mb-2 mt-2'>Agencies call us trusted allies – now with expanded expertise dedicated to uplifting your teams&#39; reach. Progress demands out-of-box orchestration. Contact us to compose possibilities.</h1>
                     </div>
                 </div>
             </section>
@@ -42,7 +44,7 @@ export default function About() {
 
                         </p>
                         <p className='text-xl'>
-                            Our data engineers architect stable, scalable data pipelines fetching, governing, uniting datasets across classic and cloud repositories for your teams’ next-gen initiatives – be it portals, IoT or AI applications. Compliance assured.
+                            Our data engineers architect stable, scalable data pipelines fetching, governing, uniting datasets across classic and cloud repositories for your teams&#39; next-gen initiatives – be it portals, IoT or AI applications. Compliance assured.
                         </p>
                     </div>
                 </div>
@@ -80,7 +82,7 @@ export default function About() {
                                         <div className="text-gray-900 font-bold text-xl mb-2">Avalogics performed systems and server engineering for a few U.S. Government projects for my company and not only did a great job, but also met some tough deadlines. I will continue to use them for projects ranging from highly technical proposal development to solutions architecture and engineering.</div>
                                     </div>
                                     <div className="flex items-center">
-                                        <Image className="w-10 h-10 mr-4" width={50} height={50} src="/Alagant-logo.png" alt="Alagant" />
+                                        <img className="w-10 h-10 mr-4" width={50} height={50} src={alagantLogo.src} alt="Alagant" />
                                         <div className="text-sm">
                                             <p className="text-gray-900 leading-none">Eli Liang</p>
                                             <p className="text-gray-600">CEO, Alagant</p>
@@ -93,10 +95,10 @@ export default function About() {
                             <div className="">
                                 <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                                     <div className="mb-8">
-                                        <div className="text-gray-900 font-bold text-xl mb-2">AVALOGICS has been a lifesaver. One thing that has stood out above all others over the first 8 months that we worked with them, is their dependability. It's challenging in software today to find teams with enough experience and tenacity to consistently meet their deadlines, and deliver impeccable products. They just don't miss. The team is gritty, they listen, they understand, and they add value every step of the way. We actively recommend them to anyone we can. </div>
+                                        <div className="text-gray-900 font-bold text-xl mb-2">AVALOGICS has been a lifesaver. One thing that has stood out above all others over the first 8 months that we worked with them, is their dependability. It&#39;s challenging in software today to find teams with enough experience and tenacity to consistently meet their deadlines, and deliver impeccable products. They just don&#39;t miss. The team is gritty, they listen, they understand, and they add value every step of the way. We actively recommend them to anyone we can. </div>
                                     </div>
                                     <div className="flex items-center">
-                                        <Image className="w-10 h-10 mr-4" width={50} height={50} src="/nursa.svg" alt="Nursa" />
+                                        <img className="w-10 h-10 mr-4" width={50} height={50} src={nursa.src} alt="Nursa" />
                                         <div className="text-sm">
                                             <p className="text-gray-900 leading-none">Curtis Anderson</p>
                                             <p className="text-gray-600">Founder @ Nursa</p>
@@ -109,10 +111,10 @@ export default function About() {
                             <div className="">
                                 <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                                     <div className="mb-8">
-                                        <div className="text-gray-900 font-bold text-xl mb-2">Every day for the last five months, I have relied on Avalogics and their ability to create, develop, execute, and manage. I would recommend them to anyone who is serious about succeeding in business. Avalogics fits my idea of “the perfect business partner". They are highly skilled, remarkably proficient, and genuinely available, openminded, attentive, and responsive at all times. I have spent thousands of hours, and hundreds of thousand of dollars relying on freelance contractors and service providers. Avalogics ranks among my top 3 most trusted. The single-greatest attribute I appreciate most about Avalogics is their ability to solve any problem, at any time, within my timeframe.</div>
+                                        <div className="text-gray-900 font-bold text-xl mb-2">Every day for the last five months, I have relied on Avalogics and their ability to create, develop, execute, and manage. I would recommend them to anyone who is serious about succeeding in business. Avalogics fits my idea of &#34;the perfect business partner&#34;. They are highly skilled, remarkably proficient, and genuinely available, openminded, attentive, and responsive at all times. I have spent thousands of hours, and hundreds of thousand of dollars relying on freelance contractors and service providers. Avalogics ranks among my top 3 most trusted. The single-greatest attribute I appreciate most about Avalogics is their ability to solve any problem, at any time, within my timeframe.</div>
                                     </div>
                                     <div className="flex items-center">
-                                        <Image className="w-10 h-10 mr-4" width={50} height={50} src="/trucknomics.jpg" alt="Trucknomics" />
+                                        <img className="w-10 h-10 mr-4" width={50} height={50} src={truckonomics.src} alt="Trucknomics" />
                                         <div className="text-sm">
                                             <p className="text-gray-900 leading-none">Myron Manuirirangi</p>
                                             <p className="text-gray-600">Truckonomics Project CEO</p>

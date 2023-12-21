@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
 import { Roboto } from 'next/font/google'
 import './globals.css'
 
@@ -10,9 +9,28 @@ export const metadata: Metadata = {
   title: 'Avalogics',
   description: 'Avalogics',
   icons: {
-    icon : '/avalogics_logo.jpeg'
+    icon: '/avalogics_logo.jpg'
   }
 }
+
+const routes = [
+  {
+    name: 'About Us',
+    path: '/about'
+  },
+  {
+    name: 'Solutions',
+    path: '/solutions'
+  },
+  {
+    name: 'Profiles',
+    path: '/profiles'
+  },
+  {
+    name: 'Contact Us',
+    path: '/contact'
+  }
+]
 
 export default function RootLayout({
   children,
@@ -22,26 +40,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <nav className='flex text-red-700 text-xl font-bold m-3'>
-          <Link href={'/'} className='basis-1/2'>
-            <Image src={'/avalogics_logo.jpeg'} alt='avalogics logo' width={60} height={60} />
-          </Link>
-          <ul className='basis-1/2 grid grid-cols-5 place-content-center'>
-            <li>
-              <Link href={'/about'}>About Us</Link>
-            </li>
-            <li>
-              <Link href={'/solutions'}>Solutions</Link>
-            </li>
-            <li>
-              <Link href={'/contracts'}>Contracts</Link>
-            </li>
-            {/* <li>
-              <Link href={'news'}>News</Link>
-            </li> */}
-            <li>
-              <Link href={'contact'}>Contact Us</Link>
-            </li>
+        <nav className='flex text-red-700 text-xl font-bold m-3 justify-between'>
+          <div >
+            <Link href={'/'}>
+              <img className='rounded-sm' src={'/avalogics_logo.avif'} alt='avalogics logo' width={60} height={'auto'} />
+            </Link>
+          </div>
+          <ul className='grid grid-cols-5 place-content-center gap-4'>
+            {routes.map(route => <li key={route.path + route.name}><Link href={route.path}>{route.name}</Link></li>)}
           </ul>
         </nav>
         {children}
@@ -49,21 +55,7 @@ export default function RootLayout({
           <div>
             <h1 className='font-bold'>Navigation</h1>
             <ul className='list-disc ml-5 mt-5'>
-              <li>
-                <Link href={'/about'}>About Us</Link>
-              </li>
-              <li>
-                <Link href={'/solutions'}>Solutions</Link>
-              </li>
-              <li>
-                <Link href={'/contracts'}>Contracts</Link>
-              </li>
-              {/* <li>
-                <Link href={'news'}>News</Link>
-              </li> */}
-              <li>
-                <Link href={'contact'}>Contact Us</Link>
-              </li>
+              {routes.map(route => <li key={route.path + route.name}><Link href={route.path}>{route.name}</Link></li>)}
             </ul>
           </div>
           <div>

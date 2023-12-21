@@ -1,6 +1,9 @@
 import backgroundImageSectionOne from "/public/background.jpg";
 import backgroundImageSectionTwo from "/public/cyber.jpg";
-import backgroundImageSectionThree from "/public/abstract.jpg";
+import devOps from "/public/devops.jpg";
+import speed from "/public/speed.jpg";
+import defend from "/public/defend.jpg";
+
 
 export default function Solutions() {
     return (
@@ -18,7 +21,7 @@ export default function Solutions() {
             }}>
                 <h1 className="text-white text-7xl font-bold">Solutions</h1>
             </section>
-            <section className='grid grid-cols-2 gap-4 place-content-center'>
+            <section className='grid grid-cols-2 gap-4 place-content-center' id='data'>
                 <div
                     style={{
                         backgroundImage: `url(${backgroundImageSectionTwo.src})`,
@@ -26,89 +29,110 @@ export default function Solutions() {
                         backgroundSize: "cover",
                         backgroundRepeat: "no-repeat",
                         width: "100vh",
-                        height: "60vh",
+                        height: "auto",
                     }}
                 ></div>
-                <div style={{ width: "100vh", height: '60vh' }} className='flex flex-col justify-center'>
+                <div style={{ width: "100vh", height: 'auto' }} className='flex flex-col justify-center py-4'>
                     <h2 className='text-3xl font-bold mb-2 mt-2 text-black'>
-                        DATA SERVICES
+                        Data engineer/Data science
                     </h2>
                     <h1 className='text-3xl font-bold mb-2 mt-2 text-red-500'>
-                        More Access. More Analytics.
+                        We speak data fluency across platforms.
                     </h1>
                     <p className='text-xl'>
-                        In today’s data-driven world, we help you maximize mission success by finding new ways to reduce the complexity and costs associated with the collection, transformation, delivery, and management of disparate information.
+                        Our data whisperers from DBAs to data scientists extract insights hiding between the 0's and 1's—elevating decisions through statistical, geospatial, behavioral modeling prowess combined with leading ETL, cloud data warehouse, lakehouse and BI tools fine-tuned to your repositories.
+                    </p>
+                    <p className='text-xl pt-2'>
+                        Want to predict service backlogs, hedge risks through simulation, optimize logistics in real-time based on machine intelligence? Our experts in dataOps will architect and implement robust pipelines to feed bleeding edge AI/ML applications. We exposeROI through usable analytics.
+                    </p>
+                    <h1 className='text-3xl font-bold mb-2 mt-2 text-red-500'>
+                        The Key Unlocks are Our Business
+                    </h1>
+                    <p className="text-xl">
+                        We provide the keys unlocking your agency’s most ambitious operational, constituent-facing and mission-enhancing possibilities.  Data holds answers to your biggest “what ifs.” Our cross-functional teams work iteratively to decipher complex challenges. We translate findings into high-impact programs generating greater access, equity, insights and interventions for the communities relying on you.
                     </p>
                 </div>
             </section>
-            <section style={{
-                backgroundImage: `url(${backgroundImageSectionThree.src})`,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                width: "auto",
-                height: "auto",
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexDirection: 'column'
-            }}>
-                <h1 className="text-red-600 text-5xl font-bold py-10">Intelligent Data Dissemination (IDDF)</h1>
-                <div className="grid grid-cols-5 gap-4 content-center text-white text-xl py-10">
-                    <div className="flex flex-col items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-20 h-20">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
-                        </svg>
-                        <p>Uniﬁed Transformation</p>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-20 h-20">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
-                        </svg>
-                        <p>Advanced Modeling</p>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-20 h-20">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
-                        </svg>
-                        <p>Agile Product Creation</p>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-20 h-20">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
-                        </svg>
-                        <p>Flexible Dissemination</p>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-20 h-20">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
-                        </svg>
-                        <p>Data Consumers</p>
-                    </div>
+            <section className='grid grid-cols-2 gap-4 place-content-center' id='devops'>
+                <div style={{ width: "100vh", height: 'auto' }} className='flex flex-col justify-center p-4'>
+                    <h2 className='text-3xl font-bold mb-2 mt-2 text-black'>
+                        Where Cloud Fluency Meets DevOps Dynamism
+                    </h2>
+                    <p className='text-xl'>
+                        We speak your cloud stack’s language – architecting, integrating, managing and optimizing public cloud, hybrid and multi-access edge deployments infused with automated CI/CD muscle. Our engineers alleviate orchestration burdens, freeing teams to deliver more value at intake points along the DevOps pipeline - from agile sprints to production-ready apps racked and stacked through infrastructure coded for optimal security, scalability and costs no matter the use case or data classification.
+                    </p>
+                    <p className='text-xl  pt-2'>
+                        Call on cloud-native authorities equipped to plan, build and run modern architectures - whether lifting and shifting legacy systems to the cloud, harnessing serverless functions, or pursuing widescale microservices adoption across vibrant development squads. We provide radar on incoming drifts that could put operations at risk so your migration stays the course. Our systematic DevOps discipline protects uptime and reliability even as infrastructures change and innovate.
+                    </p>
+
                 </div>
-                <div className="text-white text-xl py-8">
-                    Benefits to you:
-                    <ul className="list-disc text-red-700 pl-10">
-                        <li>
-                            <p className="text-white">
-                                Accelerated dissemination of data products to users
-                            </p>
-                        </li>
-                        <li>
-                            <p className="text-white">
-                                Event-driven, on demand Data-as-a-Service
-                            </p>
-                        </li>
-                        <li>
-                            <p className="text-white">
-                                Robust, flexible microservices architecture
-                            </p>
-                        </li>
-                        <li>
-                            <p className="text-white">Improved big data processing performance</p>
-                        </li>
-                    </ul>
+                <div
+                    style={{
+                        backgroundImage: `url(${devOps.src})`,
+                        backgroundPosition: "center",
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        width: "auto",
+                        height: "auto",
+                    }}
+                />
+            </section>
+            <section className='grid grid-cols-2 gap-4 place-content-center' id='agile'>
+                <div
+                    style={{
+                        backgroundImage: `url(${speed.src})`,
+                        backgroundPosition: "center",
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        width: "100vh",
+                        height: "auto",
+                    }}
+                ></div>
+                <div style={{ width: "100vh", height: 'auto' }} className='flex flex-col justify-center py-4'>
+                    <h2 className='text-3xl font-bold mb-2 mt-2 text-black'>
+                        Agile Velocity Shifting Into Overdrive
+                    </h2>
+                    <p className='text-xl'>
+                        We apply software engineering fundamentals refined over decades delivering innovation at scale across public and private sector organizations alike - where scope fluidity demands laser focus. Our teams enhance outcomes by guiding clients on structuring empowered cross-functional squads able to thrive amid changing priorities.
+                    </p>
+                    <p className='text-xl pt-2'>
+                        From user story mapping to test-driven development, our Agile DNA combines best practices with the human touch of experience. We configure CI/CD engines to keep iteration cycles spinning rapidly without stalling on quality, security or visibility concerns.
+                    </p>
+                    <p className='text-xl pt-2'>
+                        Sprints facilitated by our Scrum masters progress transparently aided by collapsible toolchain integrations, automated testing, and observability dashboards - enabling more user value delivered sooner without risking trust. Our Lean-Agile perspective steers projects avoiding overinvestment, obsolete features or schedule overruns. We amplify organizational agility through proven frameworks battle-tested by the best.
+                    </p>
+                    <p className='text-xl  pt-2'>
+                        I aimed to hit on Agile methodology expertise (Scrum, Lean-Agile), enhanced velocity/rapid delivery, CI/CD integrations, and risk mitigation. Please let me know if you would want me focus on any other aspects of Agile software development and cultural transformation!
+                    </p>
                 </div>
+            </section>
+            <section className='grid grid-cols-2 gap-4 place-content-center' id='defend'>
+                <div style={{ width: "100vh", height: 'auto' }} className='flex flex-col justify-center p-4'>
+                    <h2 className='text-3xl font-bold mb-2 mt-2 text-black'>
+                        Defenders of Critical Digital Infrastructure
+                    </h2>
+                    <p className='text-xl'>
+                        For agencies charged with safeguarding sensitive systems, data, and critical infrastructure the risks can never be too careful or too managed for readiness. We provide mature strategies and leading-edge cybersecurity capabilities evolved over decades defending government and commercial systems from advanced persistent threats.
+
+                    </p>
+                    <p className='text-xl pt-2'>
+                        Our spectrum starts with battle-tested SCO controls, data encryption, PAM, SSO, firewalls, SIEM correlation and user privilege principles preventing initial exploitation. We progress into threat intel leveraging AI for timely detection/response minimizing impacts through orchestration that accelerates healing. Resiliency by design principles drive our closed-loop architectures.
+                    </p>
+                    <p className='text-xl pt-2'>
+                        Beyond layers securing endpoints, apps and cloud infrastructure itself, our duty is guarding mission assurance. We guide agencies adopting Zero Trust frameworks that verify explicitly while enabling securely. Our expertise arms partners with the cyber readiness to uphold infrastructure integrity, safeguard constituent privacy, and maintain vital continuity of operations against criminal actors targeting essential services. Resilience remains our true north star.
+                    </p>
+
+                </div>
+                <div
+                    style={{
+                        backgroundImage: `url(${defend.src})`,
+                        backgroundPosition: "center",
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        width: "auto",
+                        height: "auto",
+                    }}
+                />
             </section>
         </main>
     );

@@ -48,16 +48,16 @@ export default function Profiles() {
                         <img className='rounded-lg w-full' src={utha.src} alt="business" />
                         <p className='text-gray-300 pt-2'>Courtesy: Jamie Hagan</p>
                         <p className='pt-5'>
-                            After completing his Master's degree in Engineering Management, Eduardo began his professional journey by joining a renowned Hispanic-American-owned firm, Avalogics LLC, based in Clearfield, Utah. Recognizing Eduardo's expertise and dedication, the company quickly promoted him to a leadership position where he managed several critical infrastructure projects for both commercial and local government customers.
+                            After completing his Master&#39;s degree in Engineering Management, Eduardo began his professional journey by joining a renowned Hispanic-American-owned firm, Avalogics LLC, based in Clearfield, Utah. Recognizing Eduardo&#39;s expertise and dedication, the company quickly promoted him to a leadership position where he managed several critical infrastructure projects for both commercial and local government customers.
                         </p>
                         <p className='pt-2'>
-                            At Avalogics LLC, Eduardo's deep understanding of the overlap between policy, engineering, and community needs propelled the company to new heights. Under his leadership, the firm was responsible for pivotal projects that encompassed transportation, water supply, and public housing solutions in the state.
+                            At Avalogics LLC, Eduardo&#39;s deep understanding of the overlap between policy, engineering, and community needs propelled the company to new heights. Under his leadership, the firm was responsible for pivotal projects that encompassed transportation, water supply, and public housing solutions in the state.
                         </p>
                         <p className='pt-2'>
-                            Eduardo's commitment isn't just limited to his professional endeavors. As a proud Hispanic professional, he is deeply invested in promoting diversity in STEM fields. He's initiated scholarships for underrepresented students in Utah and frequently speaks at educational institutions about the importance of inclusive representation in engineering and entrepreneurship.
+                            Eduardo&#39;s commitment isn&#39;t just limited to his professional endeavors. As a proud Hispanic professional, he is deeply invested in promoting diversity in STEM fields. He&#39;s initiated scholarships for underrepresented students in Utah and frequently speaks at educational institutions about the importance of inclusive representation in engineering and entrepreneurship.
                         </p>
                         <p className='pt-2'>
-                        Outside the confines of the boardroom, Eduardo, a father of two, finds solace in Utah's vast landscapes. He is an avid hiker and often attributes the state's natural beauty as a consistent source of inspiration for his work. Through his dedication to community and outstanding professional contributions, Eduardo Sandoval has cemented his reputation as an invaluable asset to Avalogics LLC and the broader Utah community.
+                        Outside the confines of the boardroom, Eduardo, a father of two, finds solace in Utah&#39;s vast landscapes. He is an avid hiker and often attributes the state&#39;s natural beauty as a consistent source of inspiration for his work. Through his dedication to community and outstanding professional contributions, Eduardo Sandoval has cemented his reputation as an invaluable asset to Avalogics LLC and the broader Utah community.
                         </p>
                     </div>
                 </div>

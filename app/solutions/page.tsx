@@ -40,7 +40,7 @@ export default function Solutions() {
                         We speak data fluency across platforms.
                     </h1>
                     <p className='text-xl'>
-                        Our data whisperers from DBAs to data scientists extract insights hiding between the 0's and 1's—elevating decisions through statistical, geospatial, behavioral modeling prowess combined with leading ETL, cloud data warehouse, lakehouse and BI tools fine-tuned to your repositories.
+                        Our data whisperers from DBAs to data scientists extract insights hiding between the 0&#39;s and 1&#39;s—elevating decisions through statistical, geospatial, behavioral modeling prowess combined with leading ETL, cloud data warehouse, lakehouse and BI tools fine-tuned to your repositories.
                     </p>
                     <p className='text-xl pt-2'>
                         Want to predict service backlogs, hedge risks through simulation, optimize logistics in real-time based on machine intelligence? Our experts in dataOps will architect and implement robust pipelines to feed bleeding edge AI/ML applications. We exposeROI through usable analytics.

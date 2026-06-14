@@ -1,9 +1,4 @@
-﻿'use client'
-
-import React from 'react'
-import Image from 'next/image'
-
-export const metadata = {
+﻿export const metadata = {
     title: 'About Us - Avalogics'
 }
 

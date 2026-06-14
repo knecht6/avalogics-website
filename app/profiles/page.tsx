@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import zoilaImg from '/public/zoila_gutierrez.png';
 import archesUthaImg from '/public/arches-utha.png';
 import utha from '/public/utha2.jpg';
@@ -9,7 +10,7 @@ export default function Profiles() {
             <section className="container">
                 <div className="grid grid-cols-3 place-content-center gap-4 p-10">
                     <div className='ml-5'>
-                        <img className='rounded-full border-4 border-gray-200' src={zoilaImg.src} alt="Zoila Gutierrez" style={{ height: '200px', width: 'auto' }} />
+                        <Image className='rounded-full border-4 border-gray-200' src={zoilaImg} alt="Zoila Gutierrez" style={{ height: '200px', width: 'auto' }} />
                         <h1 className='text-3xl font-bold pt-5'>Zoila Gutierrez</h1>
                         <h2 className='text-xl text-gray-500 pt-5'>CEO of Avalogics</h2>
                         <p className=''>
@@ -17,7 +18,7 @@ export default function Profiles() {
                         </p>
                     </div>
                     <div className='col-span-2'>
-                        <img className='rounded-lg w-full' src={archesUthaImg.src} alt="business" />
+                        <Image className='rounded-lg w-full' src={archesUthaImg} alt="business" />
                         <p className='pt-10'>
                             Zoila brought with her a strong passion for technology and project management. She previously worked for several years in Central America leading IT and software development teams, implementing ERP systems and digital solutions for medium sized companies. Her hands-on expertise and business acumen quickly became assets to employers in Utah as well.
                         </p>
@@ -29,7 +30,7 @@ export default function Profiles() {
 
                         </p>
                         <p className='pt-2'>
-                            Under Zoila’s leadership, the future shines brightly for the Avalogics team’s public sector ambitions - bringing agility and advanced capabilities to better serve US communities coast to coast.
+                            Under Zoila&apos;s leadership, the future shines brightly for the Avalogics team&apos;s public sector ambitions - bringing agility and advanced capabilities to better serve US communities coast to coast.
                         </p>
                     </div>
                 </div>
@@ -37,7 +38,7 @@ export default function Profiles() {
             <section className="container">
                 <div className="grid grid-cols-3 place-content-center gap-4 p-10">
                     <div className='ml-5'>
-                        <img className='rounded-full border-4 border-gray-200' src={coo.src} alt="Eduardo Sandoval" style={{ height: '200px', width: 'auto' }} />
+                        <Image className='rounded-full border-4 border-gray-200' src={coo} alt="Eduardo Sandoval" style={{ height: '200px', width: 'auto' }} />
                         <h1 className='text-3xl font-bold pt-5'>Eduardo Sandoval</h1>
                         <h2 className='text-xl text-gray-500 pt-5'>COO of Avalogics</h2>
                         <p className=''>
@@ -45,7 +46,7 @@ export default function Profiles() {
                         </p>
                     </div>
                     <div className='col-span-2'>
-                        <img className='rounded-lg w-full' src={utha.src} alt="business" />
+                        <Image className='rounded-lg w-full' src={utha} alt="business" />
                         <p className='text-gray-300 pt-2'>Courtesy: Jamie Hagan</p>
                         <p className='pt-5'>
                             After completing his Master&#39;s degree in Engineering Management, Eduardo began his professional journey by joining a renowned Hispanic-American-owned firm, Avalogics LLC, based in Clearfield, Utah. Recognizing Eduardo&#39;s expertise and dedication, the company quickly promoted him to a leadership position where he managed several critical infrastructure projects for commercial clients across industries.

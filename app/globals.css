@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --navy: #0a0f1e;
+  --navy-mid: #0d1526;
+  --navy-light: #111827;
+  --blue: #2563eb;
+  --blue-light: #3b82f6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--navy);
+  color: white;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

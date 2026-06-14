@@ -1,3 +1,6 @@
+'use client'
+
+import React from 'react'
 import backgroundImageSectionOne from "/public/light-bulb.jpg";
 import backgroundImageSectionTwo from "/public/industry.jpg";
 import backgroundImageSectionThree from "/public/triangles.png";

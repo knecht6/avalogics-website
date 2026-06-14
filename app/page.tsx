@@ -111,7 +111,7 @@ export default function Home() {
         }} className='text-white grid grid-cols-3 gap-4 place-content-center p-6'>
           <div>
             <h1 className='text-2xl my-3 font-bold'>Avalogics synthesizes deep expertise as your trusted partner</h1>
-            <p className='text-xl'>Combining operational depth with strategic agility, technical rigor with creative problem-solving, and proven experience with readiness to drive your organization forward. We tune elite teams and proven methodologies to each client's unique context. This partnership multiplies your ability to transform bold visions into operational realities at the heart of complex challenges. The future belongs to organizations bold enough to act—let's build it together.</p>
+            <p className='text-xl'>Combining operational depth with strategic agility, technical rigor with creative problem-solving, and proven experience with readiness to drive your organization forward. We tune elite teams and proven methodologies to each client&apos;s unique context. This partnership multiplies your ability to transform bold visions into operational realities at the heart of complex challenges. The future belongs to organizations bold enough to act—let&apos;s build it together.</p>
             <div className='flex flex-row my-4'>
               <button>Learn More</button>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 ml-2">

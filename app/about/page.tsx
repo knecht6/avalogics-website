@@ -1,12 +1,7 @@
-'use client'
+﻿'use client'
 
 import React from 'react'
-import backgroundImageSectionOne from "/public/light-bulb.jpg";
-import backgroundImageSectionTwo from "/public/industry.jpg";
-import backgroundImageSectionThree from "/public/triangles.png";
-import alagantLogo from "/public/Alagant-logo.png";
-import nursa from "/public/nursa.svg";
-import truckonomics from '/public/trucknomics.jpg';
+import Image from 'next/image'
 
 export const metadata = {
     title: 'About Us - Avalogics'
@@ -15,181 +10,40 @@ export const metadata = {
 export default function About() {
     return (
         <main>
-            <section style={{
-                backgroundImage: `url(${backgroundImageSectionOne.src})`,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                width: "auto",
-                height: "90vh",
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'flex-end'
-            }}>
-                <div className='grid grid-cols-3 gap-4 text-white'>
-                    <div></div>
-                    <div></div>
-                    <div>
-                        <h2 className='text-xl font-bold mb-2 mt-2'>About Us</h2>
-                        <h1 className='text-2xl font-bold mb-2 mt-2'>Clients call us trusted partners – with deep expertise dedicated to expanding your organization&#39;s reach. Progress demands out-of-box thinking. Contact us to compose possibilities.</h1>
-                    </div>
-                </div>
+            <section style={{backgroundColor: '#1a1a2e', padding: '80px 40px', textAlign: 'center'}}>
+                <h1 style={{color: 'white', fontSize: '2.5rem', marginBottom: '20px'}}>About Avalogics</h1>
+                <p style={{color: '#ccc', fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto'}}>
+                    Avalogics LLC is a professional services firm delivering engineering, logistics, and management advisory solutions to commercial clients across industries.
+                </p>
             </section>
-            <section className='grid grid-cols-2 gap-4 place-content-center'>
-                <div style={{ width: "100vh", height: '100vh' }} className='flex flex-col justify-center p-20'>
-                    <h1 className='text-3xl font-bold mb-2 mt-2 text-red-500'>
-                        Unlocking Operational Excellence & Future-Proofing Your Business
-                    </h1>
-                    <div>
-                        <p className='text-xl'>
-                            We empower organizations through disciplined engineering, strategic consulting, and operational expertise tailored to their unique challenges—our specialists are immersed in driving better decisions, stronger processes, and more resilient operations.
-                        </p>
-                        <p className='text-xl'>
-                            Our engineers and advisors architect scalable solutions across complex operational environments—whether optimizing logistics networks, integrating technical systems, or guiding organizational transformation. Every engagement is built on rigor, accountability, and results.
-                        </p>
-                    </div>
-                </div>
-                <div
-                    style={{
-                        backgroundImage: `url(${backgroundImageSectionTwo.src})`,
-                        backgroundPosition: "center",
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                        width: "auto",
-                        height: "100vh",
-                    }}
-                ></div>
+            <section style={{padding: '80px 40px', maxWidth: '1200px', margin: '0 auto'}}>
+                <h2 style={{fontSize: '2rem', marginBottom: '20px'}}>Our Mission</h2>
+                <p style={{fontSize: '1.1rem', lineHeight: '1.8', color: '#444'}}>
+                    We combine deep technical expertise with strategic advisory capabilities to help organizations solve complex operational challenges, optimize performance, and achieve sustainable growth.
+                </p>
             </section>
-            <section style={{
-                backgroundImage: `url(${backgroundImageSectionThree.src})`,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                width: "auto",
-                height: "auto",
-                display: 'flex',
-                alignItems: 'center',
-                flexDirection: 'column'
-            }} className='pt-10'>
-                <h1 className=’text-white text-4xl font-bold’>Our Customers</h1>
-                <p className=’text-white text-xl px-20’>Where complex challenges meet ingenuity. Clients call us partners when they face high-stakes problems that demand both technical expertise and strategic clarity.</p>
-                <p className=’text-white text-xl px-20’>Avalogics as your partner drives transformations that strengthen operations, improve efficiency, and create lasting organizational value. Join driven teams equipped with a full arsenal of engineering and advisory capabilities.</p>
-                <div>
-                    <div className='grid grid-cols-3 gap-4'>
-                        <div className='p-5'>
-                            <div className="">
-                                <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                                    <div className="mb-8">
-                                        <div className="text-gray-900 font-bold text-xl mb-2">Avalogics performed systems and server engineering for a few U.S. Government projects for my company and not only did a great job, but also met some tough deadlines. I will continue to use them for projects ranging from highly technical proposal development to solutions architecture and engineering.</div>
-                                    </div>
-                                    <div className="flex items-center">
-                                        <img className="w-10 h-10 mr-4" width={50} height={50} src={alagantLogo.src} alt="Alagant" />
-                                        <div className="text-sm">
-                                            <p className="text-gray-900 leading-none">Eli Liang</p>
-                                            <p className="text-gray-600">CEO, Alagant</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <section style={{backgroundColor: '#f5f5f5', padding: '80px 40px'}}>
+                <div style={{maxWidth: '1200px', margin: '0 auto'}}>
+                    <h2 style={{fontSize: '2rem', marginBottom: '40px', textAlign: 'center'}}>Our Leadership</h2>
+                    <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px'}}>
+                        <div style={{backgroundColor: 'white', padding: '40px', borderRadius: '8px'}}>
+                            <h3 style={{fontSize: '1.5rem', marginBottom: '10px'}}>Zoila Gutierrez</h3>
+                            <p style={{color: '#666', marginBottom: '20px'}}>CEO &amp; Founder</p>
+                            <p style={{lineHeight: '1.8'}}>Zoila founded Avalogics LLC to deliver innovative engineering and consulting solutions to commercial clients. With extensive experience in operations and strategic management, she leads the company vision and client partnerships.</p>
                         </div>
-                        <div className='p-5'>
-                            <div className="">
-                                <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                                    <div className="mb-8">
-                                        <div className="text-gray-900 font-bold text-xl mb-2">AVALOGICS has been a lifesaver. One thing that has stood out above all others over the first 8 months that we worked with them, is their dependability. It&#39;s challenging in software today to find teams with enough experience and tenacity to consistently meet their deadlines, and deliver impeccable products. They just don&#39;t miss. The team is gritty, they listen, they understand, and they add value every step of the way. We actively recommend them to anyone we can. </div>
-                                    </div>
-                                    <div className="flex items-center">
-                                        <img className="w-10 h-10 mr-4" width={50} height={50} src={nursa.src} alt="Nursa" />
-                                        <div className="text-sm">
-                                            <p className="text-gray-900 leading-none">Curtis Anderson</p>
-                                            <p className="text-gray-600">Founder @ Nursa</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='p-5'>
-                            <div className="">
-                                <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                                    <div className="mb-8">
-                                        <div className="text-gray-900 font-bold text-xl mb-2">Every day for the last five months, I have relied on Avalogics and their ability to create, develop, execute, and manage. I would recommend them to anyone who is serious about succeeding in business. Avalogics fits my idea of &#34;the perfect business partner&#34;. They are highly skilled, remarkably proficient, and genuinely available, openminded, attentive, and responsive at all times. I have spent thousands of hours, and hundreds of thousand of dollars relying on freelance contractors and service providers. Avalogics ranks among my top 3 most trusted. The single-greatest attribute I appreciate most about Avalogics is their ability to solve any problem, at any time, within my timeframe.</div>
-                                    </div>
-                                    <div className="flex items-center">
-                                        <img className="w-10 h-10 mr-4" width={50} height={50} src={truckonomics.src} alt="Trucknomics" />
-                                        <div className="text-sm">
-                                            <p className="text-gray-900 leading-none">Myron Manuirirangi</p>
-                                            <p className="text-gray-600">Truckonomics Project CEO</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div style={{backgroundColor: 'white', padding: '40px', borderRadius: '8px'}}>
+                            <h3 style={{fontSize: '1.5rem', marginBottom: '10px'}}>Eduardo Knecht</h3>
+                            <p style={{color: '#666', marginBottom: '20px'}}>Chief Technology Officer</p>
+                            <p style={{lineHeight: '1.8'}}>Eduardo brings deep expertise in technology infrastructure, cloud platforms, and digital transformation. He leads Avalogics technical delivery across engineering and management advisory engagements for commercial clients across industries.</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className='flex items-center flex-col p-10'>
-                <h1 className='text-3xl text-red-600 p-5'>Contact Us</h1>
-                <form className="w-full max-w-lg">
-                    <div className="flex flex-wrap -mx-3 mb-6">
-                        <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">
-                                First Name
-                            </label>
-                            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane" />
-                        </div>
-                        <div className="w-full md:w-1/2 px-3">
-                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-last-name">
-                                Last Name
-                            </label>
-                            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" />
-                        </div>
-                    </div>
-                    <div className="flex flex-wrap -mx-3 mb-6">
-                        <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">
-                                Email
-                            </label>
-                            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="email" placeholder="example@email.com" />
-                        </div>
-                        <div className="w-full md:w-1/2 px-3">
-                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-last-name">
-                                Company
-                            </label>
-                            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="avalogics" />
-                        </div>
-                    </div>
-                    <div className="flex flex-wrap -mx-3 mb-6">
-                        <div className="w-full px-3">
-                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-password">
-                                Phone
-                            </label>
-                            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="tel" placeholder="+1 (123) 123-1234" />
-                        </div>
-                    </div>
-                    <div className="flex flex-wrap -mx-3 mb-6">
-                        <div className="w-full px-3">
-                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-password">
-                                What can we help you with?
-                            </label>
-                            <textarea className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" placeholder="" />
-                        </div>
-                    </div>
-                    <div className="flex flex-wrap -mx-3 mb-6">
-                        <div className="w-full px-3">
-                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-password">
-                                By submitting this form, I consent to the processing of the personal data that I provide Ignite in accordance with and as described in the privacy policy.
-                            </label>
-                        </div>
-                    </div>
-                    <div className="flex flex-wrap -mx-3 mb-6">
-                        <div className="w-full px-3">
-                            <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
-                                Submit
-                            </button>
-                        </div>
-                    </div>
-                </form>
+            <section style={{padding: '80px 40px', textAlign: 'center'}}>
+                <h2 style={{fontSize: '2rem', marginBottom: '20px'}}>Get In Touch</h2>
+                <p style={{fontSize: '1.1rem', color: '#444', marginBottom: '30px'}}>Ready to work with us? Contact our team today.</p>
+                <a href="/contact" style={{backgroundColor: '#2563eb', color: 'white', padding: '15px 40px', borderRadius: '6px', textDecoration: 'none', fontSize: '1.1rem'}}>Contact Us</a>
             </section>
         </main>
-    );
+    )
 }

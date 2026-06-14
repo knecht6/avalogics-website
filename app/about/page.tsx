@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import backgroundImageSectionOne from "/public/light-bulb.jpg";
 import backgroundImageSectionTwo from "/public/industry.jpg";
 import backgroundImageSectionThree from "/public/triangles.png";
@@ -6,7 +5,7 @@ import alagantLogo from "/public/Alagant-logo.png";
 import nursa from "/public/nursa.svg";
 import truckonomics from '/public/trucknomics.jpg';
 
-export const metadata: Metadata = {
+export const metadata = {
     title: 'About Us - Avalogics'
 }
 

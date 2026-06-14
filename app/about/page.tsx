@@ -29,22 +29,21 @@ export default function About() {
                     <div></div>
                     <div>
                         <h2 className='text-xl font-bold mb-2 mt-2'>About Us</h2>
-                        <h1 className='text-2xl font-bold mb-2 mt-2'>Agencies call us trusted allies – now with expanded expertise dedicated to uplifting your teams&#39; reach. Progress demands out-of-box orchestration. Contact us to compose possibilities.</h1>
+                        <h1 className='text-2xl font-bold mb-2 mt-2'>Clients call us trusted partners – with deep expertise dedicated to expanding your organization&#39;s reach. Progress demands out-of-box thinking. Contact us to compose possibilities.</h1>
                     </div>
                 </div>
             </section>
             <section className='grid grid-cols-2 gap-4 place-content-center'>
                 <div style={{ width: "100vh", height: '100vh' }} className='flex flex-col justify-center p-20'>
                     <h1 className='text-3xl font-bold mb-2 mt-2 text-red-500'>
-                        Unlocking Data-Driven Insights & Future-Proofing How You Fuel Innovation
+                        Unlocking Operational Excellence & Future-Proofing Your Business
                     </h1>
                     <div>
                         <p className='text-xl'>
-                            We empower agencies through advanced analytics, machine learning, modeling, and visualization tailored to mission needs – our data scientists are immersed in powering better decisions and operations.
-
+                            We empower organizations through disciplined engineering, strategic consulting, and operational expertise tailored to their unique challenges—our specialists are immersed in driving better decisions, stronger processes, and more resilient operations.
                         </p>
                         <p className='text-xl'>
-                            Our data engineers architect stable, scalable data pipelines fetching, governing, uniting datasets across classic and cloud repositories for your teams&#39; next-gen initiatives – be it portals, IoT or AI applications. Compliance assured.
+                            Our engineers and advisors architect scalable solutions across complex operational environments—whether optimizing logistics networks, integrating technical systems, or guiding organizational transformation. Every engagement is built on rigor, accountability, and results.
                         </p>
                     </div>
                 </div>
@@ -70,9 +69,9 @@ export default function About() {
                 alignItems: 'center',
                 flexDirection: 'column'
             }} className='pt-10'>
-                <h1 className='text-white text-4xl font-bold'>Our Customers</h1>
-                <p className='text-white text-xl px-20'>Where missions meet ingenuity. Agencies call us allies taking on vital, complex challenges fueling national impact — now expanding talents dedicated to your mission’s possibilities.</p>
-                <p className='text-white text-xl px-20'>Avalogics as your partner pushes transformations core to community service through new operational capabilities. Join driven teams equipped with an expanded arsenal to lead missions to the farthest frontiers.</p>
+                <h1 className=’text-white text-4xl font-bold’>Our Customers</h1>
+                <p className=’text-white text-xl px-20’>Where complex challenges meet ingenuity. Clients call us partners when they face high-stakes problems that demand both technical expertise and strategic clarity.</p>
+                <p className=’text-white text-xl px-20’>Avalogics as your partner drives transformations that strengthen operations, improve efficiency, and create lasting organizational value. Join driven teams equipped with a full arsenal of engineering and advisory capabilities.</p>
                 <div>
                     <div className='grid grid-cols-3 gap-4'>
                         <div className='p-5'>
@@ -152,7 +151,7 @@ export default function About() {
                         </div>
                         <div className="w-full md:w-1/2 px-3">
                             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-last-name">
-                                Agency / Company
+                                Company
                             </label>
                             <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="avalogics" />
                         </div>

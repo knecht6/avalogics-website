@@ -76,7 +76,7 @@ export default function Contact() {
                                 </div>
                                 <div className="w-full md:w-1/2 px-3">
                                     <label className="block uppercase tracking-wide text-white  font-bold mb-2" htmlFor="grid-last-name">
-                                        Agency / Company
+                                        Company
                                     </label>
                                     <input className="appearance-none block w-full bg-gray-200 text-white border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="avalogics" />
                                 </div>

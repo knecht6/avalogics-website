@@ -21,9 +21,9 @@ export default function Home() {
         }}>
           <div className='flex lg:text-white'>
             <div className='lg:justify-end lg:w-96 lg:m-10 sm:justify-center'>
-              <h1 className='text-2xl font-bold mb-2 mt-2'>Pioneering solutions for agencies driven by a relentless mission</h1>
-              <h2 className='text-xl font-bold mb-2 mt-2'>We deliver specialized breakthroughs bridging vision to reality for our federal partners.</h2>
-              <p className='font-bold mb-2 mt-2'>Pairing boutique dedication with technical firepower scaled for the largest undertakings and matching the most soaring ambitions</p>
+              <h1 className='text-2xl font-bold mb-2 mt-2'>Precision engineering and strategic expertise for complex commercial challenges</h1>
+              <h2 className='text-xl font-bold mb-2 mt-2'>We deliver specialized solutions bridging your operational vision to measurable results.</h2>
+              <p className='font-bold mb-2 mt-2'>Pairing boutique dedication with technical firepower—scaled for the most ambitious and demanding projects.</p>
               <div className='flex flex-direction-rows'>
                 <button className='mr-2'>View more</button>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -46,13 +46,13 @@ export default function Home() {
           ></div>
           <div style={{ width: "100vh", height: '100vh' }} className='flex flex-col justify-center'>
             <h1 className='text-3xl font-bold mb-2 mt-2 text-red-500'>
-              Your moonshots, our calling
+              Your toughest challenges, our calling
             </h1>
             <p className='text-xl'>
               We bring enterprise-tested methodologies sharpened with small business responsiveness and breakthrough thinking.
             </p>
             <div className='flex flex-direction-rows mb-4 mt-4 text-red-800'>
-              <button className='mr-2'>We want to work with you</button>
+              <button className='mr-2'>Work with us</button>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
               </svg>
@@ -65,33 +65,39 @@ export default function Home() {
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           width: "auto",
-          height: "60vh"
+          height: "auto"
         }} className='flex flex-col items-center p-10'>
-          <div className='text-white text-6xl'>What We Do</div>
-          <div className='grid grid-cols-4 gap-10 text-white text-3xl place-content-center mt-10'>
-            <Link href={'/solutions#data'} className='flex flex-col items-center'>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-20 h-20">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25M9 16.5v.75m3-3v3M15 12v5.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+          <div className='text-white text-6xl mb-10'>What We Do</div>
+          <div className='grid grid-cols-2 gap-10 text-white w-full max-w-5xl'>
+            <Link href={'/solutions#engineering'} className='flex flex-col items-center bg-black bg-opacity-50 p-8 rounded-lg hover:bg-opacity-60 transition-all'>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 mb-4">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
               </svg>
-              <p>Data engineer/Data science</p>
+              <h2 className='text-2xl font-bold text-center mb-4'>Engineering, Logistics & Operational Services</h2>
+              <ul className='list-disc ml-5 text-base space-y-1 self-start'>
+                <li>Systems Engineering & Integration</li>
+                <li>Logistics & Supply Chain Optimization</li>
+                <li>Operational Support & Field Services</li>
+                <li>Technical Documentation & Configuration Management</li>
+                <li>Quality Assurance & Process Engineering</li>
+                <li>Infrastructure Planning & Facilities Engineering</li>
+                <li>Program & Project Engineering Support</li>
+              </ul>
             </Link>
-            <Link href={'/solutions#devops'} className='flex flex-col items-center'>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-20 h-20">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
+            <Link href={'/solutions#management'} className='flex flex-col items-center bg-black bg-opacity-50 p-8 rounded-lg hover:bg-opacity-60 transition-all'>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 mb-4">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
               </svg>
-              <p>Cloud Devops</p>
-            </Link>
-            <Link href={'/solutions#agile'} className='flex flex-col items-center'>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-20 h-20">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
-              </svg>
-              <p>Agile CI/CD</p>
-            </Link>
-            <Link href={'/solutions#defend'} className='flex flex-col items-center'>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-20 h-20">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-              </svg>
-              <p>CyberSecurity</p>
+              <h2 className='text-2xl font-bold text-center mb-4'>Management & Advisory Services</h2>
+              <ul className='list-disc ml-5 text-base space-y-1 self-start'>
+                <li>Strategic Management Consulting</li>
+                <li>Business Process Improvement & Optimization</li>
+                <li>Organizational Change Management</li>
+                <li>Financial Management & Budget Advisory</li>
+                <li>Acquisition & Procurement Advisory</li>
+                <li>Performance Management & Analytics</li>
+                <li>Workforce Planning & Training Advisory</li>
+              </ul>
             </Link>
           </div>
         </section>
@@ -104,8 +110,8 @@ export default function Home() {
           height: "90vh",
         }} className='text-white grid grid-cols-3 gap-4 place-content-center p-6'>
           <div>
-            <h1 className='text-2xl my-3 font-bold'>Now Avalogics synthesis our forces as your modern ally</h1>
-            <p className='text-xl'>Combining our depth with agility, creativity with rigor, and unique legacy with readiness to launch agencies into the future. We tune elite teams and proven methodologies to each agency’s essence. This partnership multiplies the ability to transform bold visions into operational realities core to complex missions. History stands on the shoulders of trailblazers hungry to keep rising. Join two allies ready to double progress in service of national priorities. The future belongs to the bold - let’s meet it together.</p>
+            <h1 className='text-2xl my-3 font-bold'>Avalogics synthesizes deep expertise as your trusted partner</h1>
+            <p className='text-xl'>Combining operational depth with strategic agility, technical rigor with creative problem-solving, and proven experience with readiness to drive your organization forward. We tune elite teams and proven methodologies to each client's unique context. This partnership multiplies your ability to transform bold visions into operational realities at the heart of complex challenges. The future belongs to organizations bold enough to act—let's build it together.</p>
             <div className='flex flex-row my-4'>
               <button>Learn More</button>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 ml-2">

@@ -13,7 +13,7 @@ export default function Profiles() {
                         <h1 className='text-3xl font-bold pt-5'>Zoila Gutierrez</h1>
                         <h2 className='text-xl text-gray-500 pt-5'>CEO of Avalogics</h2>
                         <p className=''>
-                            Zoila Gutierrez is the CEO and Founder of Avalogics, an IT solutions company based in Clearfield, Utah that is pursuing US government contracts. Zoila emigrated to the US from El Salvador in 2005 and has called the state of Utah her home ever since.
+                            Zoila Gutierrez is the CEO and Founder of Avalogics, an engineering and management consulting firm based in Clearfield, Utah. Zoila emigrated to the US from El Salvador in 2005 and has called the state of Utah her home ever since.
                         </p>
                     </div>
                     <div className='col-span-2'>
@@ -22,7 +22,7 @@ export default function Profiles() {
                             Zoila brought with her a strong passion for technology and project management. She previously worked for several years in Central America leading IT and software development teams, implementing ERP systems and digital solutions for medium sized companies. Her hands-on expertise and business acumen quickly became assets to employers in Utah as well.
                         </p>
                         <p className='pt-2'>
-                            Founded in late 2017 and initially self-funded by Zoila drawing from her own savings, Avalogics provides a range of services from custom software to security assessments and cloud infrastructure for commercial companies. However, Zoila has set her sights on the immense potential serving public sector clients and making an impact by modernizing government operations.
+                            Founded in late 2017 and initially self-funded by Zoila drawing from her own savings, Avalogics provides a range of services from custom software to security assessments and cloud infrastructure for commercial companies. However, Zoila has set her sights on the immense potential serving public sector clients and making an impact through innovative engineering and consulting solutions.
                         </p>
                         <p className='pt-2'>
                             Headquartered in Clearfield in an Opportunity Zone, Avalogics is eligible for incentives to spur growth and local hiring. As a visionary Hispanic woman tech founder, Zoila aims to deliver innovation to public agencies while expanding economic prospects for untapped talent nearby. She constantly advocates for young women and minorities to develop STEAM skills and become the next generation of IT trailblazers.
@@ -48,7 +48,7 @@ export default function Profiles() {
                         <img className='rounded-lg w-full' src={utha.src} alt="business" />
                         <p className='text-gray-300 pt-2'>Courtesy: Jamie Hagan</p>
                         <p className='pt-5'>
-                            After completing his Master&#39;s degree in Engineering Management, Eduardo began his professional journey by joining a renowned Hispanic-American-owned firm, Avalogics LLC, based in Clearfield, Utah. Recognizing Eduardo&#39;s expertise and dedication, the company quickly promoted him to a leadership position where he managed several critical infrastructure projects for both commercial and local government customers.
+                            After completing his Master&#39;s degree in Engineering Management, Eduardo began his professional journey by joining a renowned Hispanic-American-owned firm, Avalogics LLC, based in Clearfield, Utah. Recognizing Eduardo&#39;s expertise and dedication, the company quickly promoted him to a leadership position where he managed several critical infrastructure projects for commercial clients across industries.
                         </p>
                         <p className='pt-2'>
                             At Avalogics LLC, Eduardo&#39;s deep understanding of the overlap between policy, engineering, and community needs propelled the company to new heights. Under his leadership, the firm was responsible for pivotal projects that encompassed transportation, water supply, and public housing solutions in the state.

@@ -4,13 +4,12 @@ import { useState, useMemo } from 'react'
 import Link from 'next/link'
 
 type SubService = { id: string; name: string; desc: string }
-type ServiceArea = { id: number; title: string; domain: 1 | 2; subServices: SubService[] }
+type ServiceArea = { id: number; title: string; subServices: SubService[] }
 
 const serviceAreas: ServiceArea[] = [
   {
     id: 1,
     title: 'Business Strategy, Governance, and Growth',
-    domain: 2,
     subServices: [
       { id: '1.1', name: 'Growth Strategy and Sourcing Roadmaps', desc: 'Helps leadership choose where the business should compete, what capabilities it must build or buy, and how to sequence the work. Services include strategic roadmaps, sourcing plans, competitive positioning, supplier selection support, initiative prioritization, and practical action plans tied to measurable business goals.' },
       { id: '1.2', name: 'Market Intelligence and Competitive Positioning', desc: 'Turns market signals, customer trends, competitor moves, and pricing behavior into clear recommendations. Services include market scans, opportunity sizing, competitor benchmarking, win/loss analysis, market entry planning, and messaging support for sales and leadership teams.' },
@@ -24,7 +23,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 2,
     title: 'Financial Performance, Commercial Controls, and Value Management',
-    domain: 2,
     subServices: [
       { id: '2.1', name: 'Financial Planning and Performance Controls', desc: 'Supports disciplined financial execution through planning, forecasting, cost visibility, and management reporting. Services include budgets, forecasts, variance analysis, cost tracking, performance reports, financial operating rhythms, and leadership-ready views of financial health.' },
       { id: '2.2', name: 'Cost Modeling and Business Case Development', desc: 'Creates fact-based cost and value models that help leaders compare options and justify investments. Services include lifecycle cost models, total cost of ownership analysis, scenario planning, savings estimates, capital planning inputs, and decision-grade business cases.' },
@@ -38,7 +36,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 3,
     title: 'Portfolio Delivery, Quality, and Risk Leadership',
-    domain: 2,
     subServices: [
       { id: '3.1', name: 'Enterprise Initiative and Portfolio Leadership', desc: 'Provides leadership structure for groups of related initiatives that must move together to achieve a business result. Services include portfolio planning, schedule coordination, dependency tracking, executive reporting, milestone control, team alignment, and delivery recovery support.' },
       { id: '3.2', name: 'Service Quality and Performance Verification', desc: 'Builds confidence that products, services, facilities, and delivery teams meet agreed standards before problems reach customers. Services include inspection plans, performance reviews, acceptance criteria, quality metrics, root-cause analysis, corrective actions, and continuous improvement routines.' },
@@ -54,7 +51,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 4,
     title: 'Workforce Capability, Learning, and Adoption',
-    domain: 2,
     subServices: [
       { id: '4.1', name: 'Workforce Skill Development and Practice Delivery', desc: 'Builds role-specific capability through targeted instruction, exercises, job aids, and performance checks. Services include custom courseware, instructor-led sessions, virtual delivery, hands-on labs, proficiency assessments, coaching, and learning reinforcement.' },
       { id: '4.2', name: 'Structured Learning and Instructional Programs', desc: 'Designs and delivers formal learning experiences for employees, customers, partners, and leadership groups. Services include curriculum design, lesson plans, learning objectives, facilitation, knowledge checks, certification support, and learning program administration.' },
@@ -68,7 +64,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 5,
     title: 'Customer, Process, and Operational Advisory',
-    domain: 2,
     subServices: [
       { id: '5.1', name: 'Customer Experience and Service Design', desc: 'Improves the way customers, employees, and partners move through a product or service journey. Services include journey mapping, pain point analysis, service blueprinting, customer feedback analysis, experience metrics, and service improvement roadmaps.' },
       { id: '5.2', name: 'Business Process Improvement and Workflow Redesign', desc: 'Removes friction, rework, delay, and unnecessary handoffs from business operations. Services include process mapping, cycle-time analysis, workload balancing, automation opportunities, control point design, and future-state workflows.' },
@@ -82,7 +77,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 6,
     title: 'Technical Engineering, Product Design, and Modernization',
-    domain: 1,
     subServices: [
       { id: '6.1', name: 'Technical Design and Engineering Advisory', desc: 'Supports the design, review, improvement, and deployment of products, equipment, facilities, processes, and technical systems. Services include feasibility analysis, concept development, detailed design review, installation support, technical evaluation, engineering oversight, and lifecycle planning.' },
       { id: '6.2', name: 'Requirements, Architecture, and System Definition', desc: 'Turns business needs and operating constraints into clear technical requirements and practical designs. Services include requirements workshops, functional analysis, architecture planning, interface definition, trade studies, design criteria, and requirements traceability.' },
@@ -98,7 +92,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 7,
     title: 'Connected Systems, Data Flow, and Platform Operations',
-    domain: 1,
     subServices: [
       { id: '7.1', name: 'Connected Systems and Data Exchange Enablement', desc: 'Allows different applications, devices, platforms, and data sources to share information reliably. Services include interface planning, data mapping, protocol review, platform connectivity, data exchange testing, message validation, and operating procedures for connected environments.' },
       { id: '7.2', name: 'Platform Migration and Operational Cutover', desc: 'Moves work from legacy tools, equipment, or platforms to improved environments while protecting business continuity. Services include migration planning, readiness checks, cutover playbooks, data transfer coordination, rollback plans, user communications, and post-cutover stabilization.' },
@@ -111,7 +104,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 8,
     title: 'Supply Chain, Logistics, and Fulfillment Operations',
-    domain: 1,
     subServices: [
       { id: '8.1', name: 'Supply Chain and Distribution Optimization', desc: 'Improves the movement, storage, planning, and control of goods, materials, equipment, and information across the business. Services include supply network design, inventory planning, warehouse improvement, transportation coordination, materials handling, throughput analysis, and cost reduction plans.' },
       { id: '8.2', name: 'Inventory Planning and Materials Control', desc: 'Balances availability, cash use, storage capacity, and service levels across purchased goods, spare parts, raw materials, and finished products. Services include demand planning, reorder rules, stock level review, cycle counting, shortage reduction, excess inventory reduction, and inventory accuracy improvement.' },
@@ -126,7 +118,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 9,
     title: 'Manufacturing, Field Operations, and Facilities',
-    domain: 1,
     subServices: [
       { id: '9.1', name: 'Production Capability and Factory Readiness', desc: 'Assesses whether a production environment can reliably deliver required volume, quality, timing, and cost. Services include capacity review, production planning, workflow readiness, staffing assumptions, supplier readiness, process stability review, and launch preparedness.' },
       { id: '9.2', name: 'Manufacturing Engineering and Process Industrialization', desc: 'Turns product designs and operating goals into repeatable production processes. Services include process design, tooling review, work instructions, line balancing, equipment selection support, pilot build planning, and handoff from engineering to production.' },
@@ -142,7 +133,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 10,
     title: 'Healthcare and Specialized Operational Logistics',
-    domain: 2,
     subServices: [
       { id: '10.1', name: 'Healthcare Supply Continuity and Clinical Materials Flow', desc: 'Supports reliable planning, movement, storage, and availability of healthcare supplies, devices, consumables, and clinical equipment. Services include par-level review, clinical stockroom processes, equipment availability tracking, supplier coordination, usage analysis, and replenishment planning.' },
       { id: '10.2', name: 'Cold Chain, Sterile Handling, and Chain-of-Custody Support', desc: 'Protects sensitive materials that require special temperature, handling, sterility, custody, or traceability controls. Services include handling procedures, monitoring requirements, custody records, exception processes, storage review, and staff readiness support.' },
@@ -154,7 +144,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 11,
     title: 'Commercial Service Operations and Managed Support',
-    domain: 2,
     subServices: [
       { id: '11.1', name: 'Service Desk and Operations Center Advisory', desc: 'Designs and improves centralized teams that receive, triage, resolve, and escalate business, customer, technical, or facility issues. Services include channel design, ticket processes, staffing models, quality review, escalation rules, knowledge use, and performance reporting.' },
       { id: '11.2', name: 'Managed Operations Transition Planning', desc: 'Moves work from one delivery model, vendor, site, or team structure to another with reduced disruption. Services include transition schedules, responsibility matrices, knowledge transfer, readiness gates, service stabilization, risk controls, and cutover support.' },
@@ -167,7 +156,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 12,
     title: 'Cross-Cutting Commercial Advisory and Operational Support',
-    domain: 2,
     subServices: [
       { id: '12.1', name: 'Transformation Roadmaps and Execution Support', desc: 'Converts broad business change into sequenced work that teams can execute. Services include transformation planning, initiative charters, dependency mapping, resource planning, executive reporting, adoption tracking, and benefit measurement.' },
       { id: '12.2', name: 'Merger and Carve-Out Operational Support', desc: 'Helps companies combine, separate, or reposition operations after a transaction. Services include Day 1 planning, operating model alignment, service separation, process harmonization, vendor transition, data handoff, and stabilization planning.' },
@@ -240,53 +228,6 @@ function AccordionItem({
   )
 }
 
-function DomainSection({
-  domainNum,
-  title,
-  tag,
-  desc,
-  areas,
-  openIds,
-  onToggle,
-  isSearching,
-}: {
-  domainNum: number
-  title: string
-  tag: string
-  desc: string
-  areas: ServiceArea[]
-  openIds: Set<number>
-  onToggle: (id: number) => void
-  isSearching: boolean
-}) {
-  if (areas.length === 0) return null
-  return (
-    <section>
-      <div className="mb-8">
-        <div className="flex items-center gap-3 mb-3">
-          <span className="bg-[#2563eb]/20 border border-[#2563eb]/40 text-[#2563eb] text-xs font-bold tracking-widest uppercase px-3 py-1.5 rounded-full">
-            {tag}
-          </span>
-          <span className="text-gray-500 text-xs">{areas.length} practice area{areas.length !== 1 ? 's' : ''}</span>
-        </div>
-        <h2 className="text-2xl md:text-3xl font-black text-white mb-2">{title}</h2>
-        <p className="text-gray-400 max-w-3xl">{desc}</p>
-      </div>
-      <div className="space-y-3">
-        {areas.map(area => (
-          <AccordionItem
-            key={area.id}
-            area={area}
-            isOpen={isSearching ? true : openIds.has(area.id)}
-            onToggle={() => onToggle(area.id)}
-            searchQuery={isSearching ? '' : ''}
-          />
-        ))}
-      </div>
-    </section>
-  )
-}
-
 export default function Solutions() {
   const [openIds, setOpenIds] = useState<Set<number>>(new Set())
   const [search, setSearch] = useState('')
@@ -311,9 +252,6 @@ export default function Solutions() {
     )
   }, [search, isSearching])
 
-  const domain2 = filtered.filter(a => a.domain === 2)
-  const domain1 = filtered.filter(a => a.domain === 1)
-
   const totalSubs = filtered.reduce((n, a) => n + a.subServices.length, 0)
 
   return (
@@ -330,7 +268,7 @@ export default function Solutions() {
             Our Services
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-8">
-            12 practice areas spanning 86 specialized sub-services across two integrated MAPS domains — built for complex commercial and government challenges.
+            12 practice areas spanning 86 specialized sub-services — built for complex commercial and government challenges.
           </p>
           <div className="flex items-center justify-center gap-8">
             <div className="text-center">
@@ -341,11 +279,6 @@ export default function Solutions() {
             <div className="text-center">
               <div className="text-3xl font-black text-[#2563eb]">86</div>
               <div className="text-gray-500 text-xs uppercase tracking-wider mt-1">Sub-Services</div>
-            </div>
-            <div className="w-px h-10 bg-white/10" />
-            <div className="text-center">
-              <div className="text-3xl font-black text-[#2563eb]">2</div>
-              <div className="text-gray-500 text-xs uppercase tracking-wider mt-1">Domains</div>
             </div>
           </div>
         </div>
@@ -385,35 +318,24 @@ export default function Solutions() {
       </div>
 
       {/* Content */}
-      <div className="max-w-5xl mx-auto px-6 py-12 space-y-16">
+      <div className="max-w-5xl mx-auto px-6 py-12">
         {filtered.length === 0 ? (
           <div className="text-center py-24">
             <p className="text-gray-400 text-lg mb-2">No services match your search.</p>
             <button onClick={() => setSearch('')} className="text-[#2563eb] text-sm hover:underline">Clear search</button>
           </div>
         ) : (
-          <>
-            <DomainSection
-              domainNum={2}
-              title="Management & Advisory"
-              tag="Domain 2"
-              desc="Strategic consulting, financial performance, program delivery, workforce development, customer and process advisory, healthcare operations, managed support, and cross-cutting operational advisory."
-              areas={domain2}
-              openIds={openIds}
-              onToggle={toggle}
-              isSearching={isSearching}
-            />
-            <DomainSection
-              domainNum={1}
-              title="Engineering, Logistics & Operational"
-              tag="Domain 1"
-              desc="Technical engineering, product design, systems modernization, connected platforms, supply chain optimization, manufacturing, and field operations services."
-              areas={domain1}
-              openIds={openIds}
-              onToggle={toggle}
-              isSearching={isSearching}
-            />
-          </>
+          <div className="space-y-3">
+            {filtered.map(area => (
+              <AccordionItem
+                key={area.id}
+                area={area}
+                isOpen={isSearching ? true : openIds.has(area.id)}
+                onToggle={() => toggle(area.id)}
+                searchQuery={isSearching ? search : ''}
+              />
+            ))}
+          </div>
         )}
       </div>
 

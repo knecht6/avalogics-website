@@ -4,13 +4,12 @@ import { useState, useMemo } from 'react'
 import Link from 'next/link'
 
 type SubService = { id: string; name: string; desc: string }
-type ServiceArea = { id: number; title: string; summary: string; domain: 1 | 2; subServices: SubService[] }
+type ServiceArea = { id: number; title: string; domain: 1 | 2; subServices: SubService[] }
 
 const serviceAreas: ServiceArea[] = [
   {
     id: 1,
     title: 'Business Strategy, Governance, and Growth',
-    summary: 'Executive-level strategic planning, governance frameworks, and growth advisory to position organizations for long-term competitive advantage.',
     domain: 2,
     subServices: [
       { id: '1.1', name: 'Growth Strategy and Sourcing Roadmaps', desc: 'Helps leadership choose where the business should compete, what capabilities it must build or buy, and how to sequence the work. Services include strategic roadmaps, sourcing plans, competitive positioning, supplier selection support, initiative prioritization, and practical action plans tied to measurable business goals.' },
@@ -25,7 +24,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 2,
     title: 'Financial Performance, Commercial Controls, and Value Management',
-    summary: 'Rigorous financial management, cost control, and commercial advisory to optimize resource allocation and protect organizational value.',
     domain: 2,
     subServices: [
       { id: '2.1', name: 'Financial Planning and Performance Controls', desc: 'Supports disciplined financial execution through planning, forecasting, cost visibility, and management reporting. Services include budgets, forecasts, variance analysis, cost tracking, performance reports, financial operating rhythms, and leadership-ready views of financial health.' },
@@ -40,7 +38,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 3,
     title: 'Portfolio Delivery, Quality, and Risk Leadership',
-    summary: 'End-to-end program and portfolio management ensuring projects are delivered on schedule, within budget, and to defined quality standards.',
     domain: 2,
     subServices: [
       { id: '3.1', name: 'Enterprise Initiative and Portfolio Leadership', desc: 'Provides leadership structure for groups of related initiatives that must move together to achieve a business result. Services include portfolio planning, schedule coordination, dependency tracking, executive reporting, milestone control, team alignment, and delivery recovery support.' },
@@ -57,7 +54,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 4,
     title: 'Workforce Capability, Learning, and Adoption',
-    summary: 'Strategic workforce development, change management, and learning program design that builds organizational capability and drives successful adoption.',
     domain: 2,
     subServices: [
       { id: '4.1', name: 'Workforce Skill Development and Practice Delivery', desc: 'Builds role-specific capability through targeted instruction, exercises, job aids, and performance checks. Services include custom courseware, instructor-led sessions, virtual delivery, hands-on labs, proficiency assessments, coaching, and learning reinforcement.' },
@@ -72,7 +68,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 5,
     title: 'Customer, Process, and Operational Advisory',
-    summary: 'Business process improvement, customer experience design, and operational optimization advisory that eliminates waste and accelerates throughput.',
     domain: 2,
     subServices: [
       { id: '5.1', name: 'Customer Experience and Service Design', desc: 'Improves the way customers, employees, and partners move through a product or service journey. Services include journey mapping, pain point analysis, service blueprinting, customer feedback analysis, experience metrics, and service improvement roadmaps.' },
@@ -87,7 +82,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 6,
     title: 'Technical Engineering, Product Design, and Modernization',
-    summary: 'Full-spectrum systems engineering, product design, and technology modernization services from requirements through fielded capability.',
     domain: 1,
     subServices: [
       { id: '6.1', name: 'Technical Design and Engineering Advisory', desc: 'Supports the design, review, improvement, and deployment of products, equipment, facilities, processes, and technical systems. Services include feasibility analysis, concept development, detailed design review, installation support, technical evaluation, engineering oversight, and lifecycle planning.' },
@@ -104,7 +98,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 7,
     title: 'Connected Systems, Data Flow, and Platform Operations',
-    summary: 'Enterprise integration, data platform engineering, and IT operations that connect systems and transform raw data into operational intelligence.',
     domain: 1,
     subServices: [
       { id: '7.1', name: 'Connected Systems and Data Exchange Enablement', desc: 'Allows different applications, devices, platforms, and data sources to share information reliably. Services include interface planning, data mapping, protocol review, platform connectivity, data exchange testing, message validation, and operating procedures for connected environments.' },
@@ -118,7 +111,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 8,
     title: 'Supply Chain, Logistics, and Fulfillment Operations',
-    summary: 'End-to-end supply chain optimization, procurement advisory, and logistics network design that reduces cost and improves delivery performance.',
     domain: 1,
     subServices: [
       { id: '8.1', name: 'Supply Chain and Distribution Optimization', desc: 'Improves the movement, storage, planning, and control of goods, materials, equipment, and information across the business. Services include supply network design, inventory planning, warehouse improvement, transportation coordination, materials handling, throughput analysis, and cost reduction plans.' },
@@ -134,7 +126,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 9,
     title: 'Manufacturing, Field Operations, and Facilities',
-    summary: 'Manufacturing process engineering, field technical services, and facilities management to maximize operational output and asset reliability.',
     domain: 1,
     subServices: [
       { id: '9.1', name: 'Production Capability and Factory Readiness', desc: 'Assesses whether a production environment can reliably deliver required volume, quality, timing, and cost. Services include capacity review, production planning, workflow readiness, staffing assumptions, supplier readiness, process stability review, and launch preparedness.' },
@@ -151,7 +142,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 10,
     title: 'Healthcare and Specialized Operational Logistics',
-    summary: 'Specialized advisory and logistics support for healthcare organizations and complex regulated operational environments.',
     domain: 2,
     subServices: [
       { id: '10.1', name: 'Healthcare Supply Continuity and Clinical Materials Flow', desc: 'Supports reliable planning, movement, storage, and availability of healthcare supplies, devices, consumables, and clinical equipment. Services include par-level review, clinical stockroom processes, equipment availability tracking, supplier coordination, usage analysis, and replenishment planning.' },
@@ -164,7 +154,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 11,
     title: 'Commercial Service Operations and Managed Support',
-    summary: 'Managed services design, ITSM implementation, and service operations support that deliver consistent, measurable service outcomes.',
     domain: 2,
     subServices: [
       { id: '11.1', name: 'Service Desk and Operations Center Advisory', desc: 'Designs and improves centralized teams that receive, triage, resolve, and escalate business, customer, technical, or facility issues. Services include channel design, ticket processes, staffing models, quality review, escalation rules, knowledge use, and performance reporting.' },
@@ -178,7 +167,6 @@ const serviceAreas: ServiceArea[] = [
   {
     id: 12,
     title: 'Cross-Cutting Commercial Advisory and Operational Support',
-    summary: 'Versatile advisory and execution support services that span functional boundaries to address complex, multi-domain operational challenges.',
     domain: 2,
     subServices: [
       { id: '12.1', name: 'Transformation Roadmaps and Execution Support', desc: 'Converts broad business change into sequenced work that teams can execute. Services include transformation planning, initiative charters, dependency mapping, resource planning, executive reporting, adoption tracking, and benefit measurement.' },
@@ -225,7 +213,6 @@ function AccordionItem({
           <h3 className="text-white font-bold text-lg leading-snug group-hover:text-[#60a5fa] transition-colors duration-150">
             {highlight(area.title)}
           </h3>
-          <p className="text-gray-400 text-sm mt-1 leading-relaxed">{highlight(area.summary)}</p>
         </div>
         <span className={`shrink-0 mt-1 w-6 h-6 flex items-center justify-center rounded-full border transition-all duration-200 ${isOpen ? 'border-[#2563eb]/60 bg-[#2563eb]/20 rotate-180' : 'border-white/20 bg-white/5'}`}>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5 text-gray-300">
@@ -320,7 +307,6 @@ export default function Solutions() {
     const q = search.toLowerCase()
     return serviceAreas.filter(area =>
       area.title.toLowerCase().includes(q) ||
-      area.summary.toLowerCase().includes(q) ||
       area.subServices.some(s => s.name.toLowerCase().includes(q) || s.desc.toLowerCase().includes(q))
     )
   }, [search, isSearching])

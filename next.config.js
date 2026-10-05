@@ -8,6 +8,11 @@ const nextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      { source: '/sewpvi', destination: '/sewpvi/index.html' },
+    ]
+  },
 }
 
 module.exports = nextConfig
